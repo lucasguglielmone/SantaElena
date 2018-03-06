@@ -11,6 +11,20 @@
 |
 */
 
+
+Route::group(['middleware' => 'web'], function () {
+    
+});
+
+
+/* HOME ROUTING */
+
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/index', function () {
+    return view('home');
+});
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
