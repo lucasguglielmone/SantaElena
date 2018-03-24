@@ -10,7 +10,7 @@
 			float: left;
 			width: auto;
 			padding: 10px;
-			heigth: 350px;
+			height: 350px;
 		 
 	}
 	
@@ -25,6 +25,7 @@
 @endsection
 
 @section('scripts')
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoIa_kNxGbktlUj27zoLRKD_3v43SfZEE&callback=myMap"></script>
 <script>
 	function myMap() {
 	  var myCenter = new google.maps.LatLng(-34.57829872638948,-58.41287702322006);
@@ -35,16 +36,13 @@
 	  marker.setMap(map);
 	}
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
 @endsection
 
 @section('content')
 <div class="row">
-  <div class="column">
-	<div id="map" style="width:350px;height:250px"></div>
-
-
-	
+  <div class="column" style="margin-right:10px;">
+		<div id="map" style="width:350px;height:250px"></div>
   </div>
   <div class="column">
 	<h2>Anabella</h2>
