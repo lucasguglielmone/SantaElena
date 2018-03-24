@@ -1,10 +1,9 @@
 <html>
-    <head>
-        @include('layouts.head')
-    </head>
+    @include('layouts.head')
     <body>
+        @include('layouts.nav')
+        @include('layouts.slider')
         <div class="container">
-            @include('layouts.nav')
             @yield('content')
         </div>
     </body>

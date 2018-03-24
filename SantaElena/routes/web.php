@@ -13,7 +13,12 @@
 
 
 Route::group(['middleware' => 'web'], function () {
-    
+    Route::get('/sucursales',function() {
+        return view('general/sucursales');
+    });
+    Route::get('/login',function() {
+        return view('general/login');
+    });
 });
 
 
